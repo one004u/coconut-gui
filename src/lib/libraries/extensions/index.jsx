@@ -46,7 +46,45 @@ import gdxforInsetIconURL from './gdxfor/gdxfor-small.svg';
 import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
+// TODO: Add new extension for coconut
+import coconutIconURL from './coconut/coconut.png';
+import coconutInsetIconURL from './coconut/coconut-small.svg';
+import coconutConnectionIconURL from './coconut/coconut-illustration.svg';
+import coconutConnectionSmallIconURL from './coconut/coconut-small.svg';
+
+
 export default [
+    {
+        // TODO: Add coconut block, 231020
+        name: 'Coconut',
+        extensionId: 'coconut',
+        collaborator: 'coconut',
+        iconURL: coconutIconURL,
+        insetIconURL: coconutInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Play with powerful small robot!"
+                description="Description for the 'Coconut' extension"
+                id="gui.extension.coconut.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        bluetoothRequired: false,
+        internetConnectionRequired: true,
+        launchPeripheralConnectionFlow: true,
+        useAutoScan: false,
+        connectionIconURL: coconutConnectionIconURL,
+        connectionSmallIconURL: coconutConnectionSmallIconURL,
+        connectingMessage: (
+            <FormattedMessage
+                defaultMessage="Connecting"
+                description="Message to help people connect to their edubot."
+                id="gui.extension.coconut.connectingMessage"
+            />
+        ),
+        helpLink: 'https://github.com/one004u/coconut-gui'
+    },
     {
         name: (
             <FormattedMessage
